@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/to-do-list/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>To do List Pessoal</title>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Compromissos Diários</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Adicione uma nova tarefa..." required>
+            <select id="day-select">
+                <option value="Segunda-Feira">Segunda-Feira</option>
+                <option value="Terça-Feira">Terça-Feira</option>
+                <option value="Quarta-Feira">Quarta-Feira</option>
+                <option value="Quinta-Feira">Quinta-Feira</option>
+                <option value="Sexta-Feira">Sexta-Feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <input type="date" id="date-input">
+            <input type="time" id="time-input">
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+    
+    <script src="/to-do-list/js/script.js"></script>
+</body>
+</html>
